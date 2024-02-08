@@ -25,9 +25,7 @@
 
 	// Declare functions
 	const onFiltredByType = async (e) => (products = await findProductsByType(e));
-	const onFiltredByCategory = async (e) => {
-		products = await findProductsByCategoryId(e.target.dataset.categoryId)
-	};
+	const onFiltredByCategory = async (e) => {products = await findProductsByCategoryId(e.target.dataset.categoryId)};
 	const onResetProducts = () => (products = data.products.slice(0, 10));
 </script>
 

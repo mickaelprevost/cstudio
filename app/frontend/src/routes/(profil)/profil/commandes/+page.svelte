@@ -8,7 +8,7 @@
 </script>
 
 <section class="order-content">
-	{#if orders}
+	{#if orders.length > 0}
 	{#each orders as order}
 		<div class="order-content__row">
 			<h3>Commande n°{order.number}</h3>

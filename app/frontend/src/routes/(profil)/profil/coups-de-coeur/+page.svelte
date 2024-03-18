@@ -16,7 +16,7 @@
 </script>
 
 <section class="favorite-content">
-	{#if likes}
+	{#if likes.length > 0}
 		{#each likes as like}
 			<div class="favorite-content__row">
 				<div class="favorite-content__desc">

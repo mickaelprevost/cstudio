@@ -12,9 +12,7 @@ export const actions = {
 			const productId = form.get('id');
 			const userId = locals.session.data.user.id;
 
-			await addUserLike(productId, userId, locals.session.data.token);
-
-			throw redirect(302, '/');
+			const result = await addUserLike(productId, userId, locals.session.data.token);
 		}
 
 		throw redirect(302, '/connexion');

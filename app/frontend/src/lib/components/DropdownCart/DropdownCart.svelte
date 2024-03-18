@@ -50,7 +50,7 @@
 	.dropdownCart {
 		z-index: 1000;
 		position: absolute;
-		top: 4rem;
+		top: 7rem;
 		right: 1rem;
 		padding: 0.75rem 1rem;
 		width: fit-content;

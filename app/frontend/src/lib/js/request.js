@@ -27,9 +27,8 @@ export const findAllProductById = async (id) => {
 	return data;
 }
 
-export const findProductsByType = async (e) => {
-	const typeId = e.target.value;
-	const response = await fetch(`${endpoint}/product/?type=${typeId}`, {
+export const findProductsByType = async (id) => {
+	const response = await fetch(`${endpoint}/product/?type=${id}`, {
 		method: 'GET',
 		headers: {
 			Accept: '*/*',

@@ -2,12 +2,10 @@
 	// Import icons
 	import logo from '$lib/icons/logo.svg';
 	import iconMenu from '$lib/icons/menu.svg';
-	import iconSearch from '$lib/icons/search.svg';
 	import iconProfil from '$lib/icons/profile-circle.svg';
 	import iconCart from '$lib/icons/simple-cart.svg';
 
 	// Import components
-	import Search from '$lib/components/Search.svelte';
 	import Menu from '$lib/components/Menu.svelte';
 	import DropdownProfil from '$lib/components/DropdownProfil.svelte';
 	import DropdownCart from '$lib/components/DropdownCart/DropdownCart.svelte';
@@ -15,7 +13,6 @@
 	// Declare variables
 	let screenSize = 0;
 	let isMenuOpen = false;
-	let isSearchOpen = false;
 	let isProfilOpen = false;
 	let isCartOpen = false;
 
@@ -24,14 +21,11 @@
 		isMenuOpen = !isMenuOpen;
 		document.body.classList.toggle('scroll-lock');
 	};
-	const toggleOpenSearch = () => isSearchOpen = !isSearchOpen;
 	const toggleOpenProfil = () => isProfilOpen = !isProfilOpen;
 	const toggleOpenCart = () => isCartOpen = !isCartOpen;
 </script>
 
 <svelte:window bind:innerWidth={screenSize} />
-
-{#if isSearchOpen} <Search /> {/if}
 
 <header class="header">
 	<div class="header__left-isDesktop">
@@ -42,9 +36,6 @@
 		<div class="header__left">
 			<button on:click={toggleOpenMenu}>
 				<img src={iconMenu} alt="Icon du menu" class="header__icon header__icon-isOpenMenu" />
-			</button>
-			<button on:click={toggleOpenSearch}>
-				<img src={iconSearch} alt="Icon de la recherche" class="header__icon" />
 			</button>
 		</div>
 	</div>

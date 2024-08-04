@@ -1,10 +1,8 @@
-<h1 align="center" style="margin-top:3rem;"> C-Studio </h1>
+<div align="center" style="background-color:yellow; margin-top: 2rem;"> 
+    <img style="width:250px; border-radius:15px;" src="documents/docspreview/logo-cstudio.png" alt=""> 
+</div>
 
 <p align="center"> Bienvenue sur le projet C-studio, application E-commerce sur le thème de l'art développé sous Symfony6 et sveltekit.</p>
-
-<div align="center" style="margin-top: 2rem;"> 
-    <img style="background-color:yellow; width:250px; border-radius:15px;" src="documents/docspreview/logo-cstudio.png" alt=""> 
-</div>
 
 <h2 align="center" style="margin-top:3rem;"> Avancement du projet </h2>
 <p>templates --> 100% </p>
